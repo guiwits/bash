@@ -133,7 +133,7 @@ function set_grind_strict_bounds() {
 
   # example of command line entry: 
   # echo "sed -i '/^strictbound.*/c strictbound : -123.562300 37.381866 -121.062300 39.048534 # South Napa 2014' /app/shakemap/config/grind.conf" 
-  # | ssh eewresults@ci-eew4.gps.caltech.edu bash
+  # | ssh eewresults@example.com bash
 
   echo "Changing the strictbound entry in ${grind_conf_location} to '${event_strict_bound}'"
   cmd="sed -i '/^strictbound.*/c strictbound : ${event_strict_bound}' ${grind_conf_location}" 
