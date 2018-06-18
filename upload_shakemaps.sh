@@ -106,7 +106,7 @@ function run_shakemap_bin() {
 
   for s_evt in "${!soc_events[@]}"
   do
-    echo "Modifying scrict bound of grind.conf file. Using ${soc_events[${s_evt}]} as the bounds"
+    echo "Modifying scrictbound setting of grind.conf file. Using ${soc_events[${s_evt}]} as the bounds"
     if [[ "${soc_events[${s_evt}]}" != "" ]]
     then
       echo "[INFO]: strictbound for ${s_evt} is ${soc_events[${s_evt}]}"
