@@ -1,8 +1,11 @@
+#!/bin/bash
+
 #
 # Main
 #
 function main() {
-  echo "hello world!"
+  local hello="hello world!"
+  echo "${hello}"
 }
 
 #
